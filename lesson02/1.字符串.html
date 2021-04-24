@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        "use strict"
+        // var strr = "qwe"
+        // var age = 17;
+        // console.log(`今年${age}岁了`);
+        //
+        // let person = {
+        //     name: "xxx,
+        //     age: 17,
+        //     sex: "男"
+        // }
+        let c = 1;
+        // while (c < 100){
+        //     c++;
+        //     console.log(c);
+        // }
+
+        // var arr = [1,2,34,,5,6,65];
+        // arr.forEach(function (value) {
+        //     console.log(value)
+        // })
+
+        // var map = new Map([["peter",100],["tom",99],["nico",77]]);
+        // map.set("mike",67);
+        // console.log(map.get("peter"));
+
+        var set = new Set([1,2,3,1,1]);
+        set.add(1);
+        // console.log(set.has(2));
+        // set.delete(1);
+
+        let num = set[Symbol.iterator]();
+        console.log(num.next().value);
+        let i = 1;
+        while (i <= 3){
+            console.log(num.next().value);
+            console.log(num.next().done);
+            i++;
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

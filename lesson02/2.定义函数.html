@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        "use strict"
+        function abs(x){
+            // if (typeof x !== "number"){
+            //     throw "输入非法";
+            // }
+
+            for (var i = 0; i<arguments.length;i++){
+                console.log(arguments[i]);
+            }
+            if (x >= 0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+
+        var abs = function (x) {
+            if (x >= 0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+
+        function aa(a,b,...rest) {
+            console.log(a);
+            console.log(b);
+            console.log(rest);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
