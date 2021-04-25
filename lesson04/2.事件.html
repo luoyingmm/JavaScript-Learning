@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+
+    <script src="lib/jquery-3.6.0.js"></script>
+</head>
+<body>
+    mouth: <span id="mouth"></span>
+    <div id="divMove">把鼠标放在这试试</div>
+    <script>
+        $(function () {
+            $("#divMove").mousemove(function (e) {
+                $("#mouth").text("X:" + e.pageX + "y:" + e.pageY);
+            })
+        });
+    </script>
+
+</body>
+</html>

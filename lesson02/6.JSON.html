@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = {
+            name: "落樱",
+            age: 17,
+            sex: "男",
+            run: function () {
+                console.log(this.name + "在跑路");
+            }
+        };
+        var b = JSON.stringify(a);
+        let parse = JSON.parse('{"name":"落樱","age":17,"sex":"男"}');
+
+        var xm = {
+            name: "小明"
+        };
+
+        xm.__proto__ = a;
+
+
+          
+    </script>
+</head>
+<body>
+
+</body>
+</html>

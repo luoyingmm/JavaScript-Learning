@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="id1">
+        <p id="p1">1</p>
+        <p id="p2">2</p>
+    </div>
+    <script>
+        let p1 = document.getElementById("p1");
+        let element = p1.parentElement;
+        element.removeChild(element.children[0]);
+
+    </script>
+</body>
+</html>

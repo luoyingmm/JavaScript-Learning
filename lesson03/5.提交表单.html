@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <form action="https://www.baidu.com" method="post" onsubmit="return aaa()">
+        <p>
+            <span>用户名: </span>
+            <input type="text" id="username" name="username">
+        </p>
+        <p>
+            <span>密码: </span>
+            <input type="password" id="password" name="password">
+        </p>
+        <button type="submit" onclick="aaa()">登录</button>
+
+        <input type="hidden" id="md5-password" name="password">
+    </form>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js">
+
+    </script>
+
+</head>
+<body>
+    <script>
+        function aaa() {
+
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+            let md5Password = document.getElementById("md5-password");
+
+            md5Password.value = md5(password.value);
+            console.log(md5Password.value);
+            return true;
+
+        }
+    </script>
+</body>
+</html>

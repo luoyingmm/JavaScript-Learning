@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="" type="text/css">
+    <script type="text/javascript" src="">
+
+    </script>
+</head>
+<body>
+    <p id="js">js</p>
+    <div id="list">
+        <p id="ee">ee</p>
+        <p id="se">se</p>
+        <p id="me">me</p>
+    </div>
+    <script>
+        // let js = document.getElementById("js");
+        // let list = document.getElementById("list");
+        // list.append(js);
+        //
+        // let p = document.createElement("p");
+        // p.id = "ph";
+        // p.innerText = "Hello World";
+        // list.append(p);
+        //
+        // let script = document.createElement("script");
+        // script.setAttribute("type","text/javascript");
+
+        let js = document.getElementById("js");
+        let list = document.getElementById("list");
+        let me = document.getElementById("me");
+        list.insertBefore(js,me);
+
+    </script>
+</body>
+</html>

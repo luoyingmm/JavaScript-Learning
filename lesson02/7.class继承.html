@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Student{
+            constructor(name) {
+                this.name = name;
+            }
+
+            run(){
+                alert(this.name + "在走路");
+            }
+
+        }
+        var stus = new Student("小杰");
+
+        class xxs extends Student{
+            constructor(name,sex) {
+                super(name);
+                this.sex = sex;
+            }
+            tell(){
+                alert(this.name + "是一名小学生");
+            }
+        }
+        var x = new xxs("杰哥","男");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
